@@ -19,7 +19,7 @@ fs.open('./sample.txt'/*쓰기위해열어보자!*/,'w'/*모드*/, (err,fd)=>{
 		}
 		
 		console.log(written); // 몇바이트가 입력됐냐  숫자(바이트수)
-		console.log(buffer); // 
+		console.log(buffer+''); // 
 		fs.close(fd,()=>{
 			console.log('파일닫힘'); // 파일은 열고 뽑아낸뒤 닫아줘야한다 
 		});
