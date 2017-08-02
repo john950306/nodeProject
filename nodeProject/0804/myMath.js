@@ -7,7 +7,6 @@
 //var max = arguments[0];
 //if(arguments.length===0){
 //return max;
-
 //}else{
 //for( i=0;i<arguments.length -1 ;i++){
 //if(max<arguments[i]){
@@ -77,15 +76,49 @@ exports.Average = function(){
 	}
 
 };
-//exports.sortAsc = ()=>{
+exports.sortAsc = function(){
+	var arr= [];
+	if(arguments.length===0){
+		return 0;
+	}else{
+		for(i= 0 ; i <arguments.length;i++){
+			arr.push(parseInt(arguments[i]));
+		}
+		arr.sort((a,b)=>a-b);
+		return arr;
+	}
+};
+exports.sortDesc = function(){
+	var arr= [];
+	if(arguments.length===0){
+		return 0;
+	}else{
+		for(i= 0 ; i <arguments.length;i++){
+			arr.push(parseInt(arguments[i]));
+		}
+		arr.sort((a,b)=>b-a);
+		return arr;
+	}
+};
 
-//};
-//exports.sortDesc = ()=>{
 
-//};
+exports.countNum = function(num,arr){
+	var cnt=0;
+	console.log(typeof cnt);
+	if(arguments.length===2){
+		if(typeof num === "number"){
+			for(i = 0 ; i<arr.length ; i++){
+				if(num===arr[i]){
+					cnt++;
+				}
+			}
+			return cnt;
+		}
+	}else{
+		return '매게변수 (숫자,배열)으로입력해주세요';
+	}
+};
 
-
-//숫자,배열을넣으면 그숫자가 배열에 몇개있나 
 
 
 
