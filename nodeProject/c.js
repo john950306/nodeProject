@@ -43,7 +43,6 @@ app.get('/form', function (req, res) {
 	
 	var output = "이름 : "+name +"<br>";
 	output += ",나이 : "+age +"<br>";
-	
 	//
 	if(mail=='yes'){
 		output += "그래넌 쳐맞아도싸 쒸빠빠빠빠빠ㅏ깎빠까빢빠까ㅃ까ㅃ<br>";
