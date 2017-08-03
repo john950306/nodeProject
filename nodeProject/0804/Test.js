@@ -38,4 +38,6 @@ var count = myMath.countNum(3,arr);
 console.log(count);
 
 
+var random = myMath.myRandom(-10, 1);
+	console.log(random);
 

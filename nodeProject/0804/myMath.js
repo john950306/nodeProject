@@ -118,7 +118,20 @@ exports.countNum = function(num,arr){
 		return '매게변수 (숫자,배열)으로입력해주세요';
 	}
 };
+//어디부터 어디까지를 입력받았을때 그값의 랜덤을 리턴해줌
 
+exports.myRandom = function(min ,max ){
+	var cnt = 0;
+	for(i=min-1 ; i<max;i++){
+		cnt++;
+	}
+	if(min>=0){
+		return (Math.floor(((Math.random()*cnt)+1)));
+	}else{
+		var anx = -min;
+		return (Math.floor(((Math.random()*cnt)+1))) -(anx+1);
+	}
+};
 
 
 
