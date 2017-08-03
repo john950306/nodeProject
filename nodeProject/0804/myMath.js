@@ -3,19 +3,19 @@
  */
 
 
-module.exports.myMax = ()=>{
-	var max = arguments[0];
-	if(arguments.length===0){
-		return undefined;
-	}else{
-		for( i=0;i<arguments.length   ;i++){
-			if(max<arguments[i]){
-				max=arguments[i];
-			}
-		}
-		return max;
-	}
-};
+//module.exports.myMax = ()=>{
+//	var max = arguments[0];
+//	if(arguments.length===0){
+//		return undefined;
+//	}else{
+//		for( i=0;i<arguments.length   ;i++){
+//			if(max<arguments[i]){
+//				max=arguments[i];
+//			}
+//		}
+//		return max;
+//	}
+//};
 
 //가 안됨 결국  ()=> 쓰지 않는방향으로 가야할것같다 
 
@@ -34,18 +34,18 @@ module.exports.myMax =function(){
 };
 
 
-module.exports.myMax =function(){
-	var arr = [];
-	if(arguments.length===0){
-		return 0;
-	}else{
-		for(i= 0 ; i<arguments.length  ;i++){
-			arr.push(arguments[i]);
-		}
-		return Math.max.apply(null,arr);
-	}
-};
-//배열로도가능
+//module.exports.myMax =function(){
+//	var arr = [];
+//	if(arguments.length===0){
+//		return 0;
+//	}else{
+//		for(i= 0 ; i<arguments.length  ;i++){
+//			arr.push(arguments[i]);
+//		}
+//		return Math.max.apply(null,arr);
+//	}
+//};
+////배열로도가능
 
 
 module.exports.myMin = function(){
