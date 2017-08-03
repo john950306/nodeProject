@@ -6,7 +6,7 @@ var myMath = require('./myMath');
 //myMath  
 
 //맥스
-var maxnum = myMath.myMax(2,12,24,25,1,2,5,1);
+var maxnum = myMath.myMax(200,12,24,25,1,2,5,99);
 
 console.log(maxnum);
 
@@ -39,5 +39,14 @@ console.log(count);
 
 
 var random = myMath.myRandom(-10, 1);
-	console.log(random);
+console.log(random);
+
+
+var arrr = myMath.myArrRandom(['이요한','이문규','안성호','김민주','원상진']);
+console.log(arrr);
+
+var brr= Array(10);
+console.log(myMath.dafsdfasdf(brr,'아놔'));
+
+
 
