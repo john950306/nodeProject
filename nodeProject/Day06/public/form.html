@@ -6,10 +6,15 @@
 </head>
 <body>
 포오오오옴!
-<form action="/form" >
-
+<form action="/form" method="post"  enctype="multipart/form-data">
+ <!--  enctype="multipart/form-data"  제일중요함 자동완성도안됨 잘해야함 -->
 이름  <input type="text" name ="name"><br>
 나이  <input type="text" name ="age"><br>
+파일 1 <input type="file" name ="f1"><br>
+파일 2 <input type="file" name ="f2"><br>
+
+
+
  <input type="submit" value="수리수리 마수리"><br>
 
 
