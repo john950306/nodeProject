@@ -3,6 +3,7 @@
  */
 
 var myMath = require('./myMath');
+var u = require('underscore');
 //myMath  
 
 //맥스
@@ -52,9 +53,14 @@ console.log(random);
 //console.log(arrr);
 var arrr = myMath.myArrRandom(['이요한','이문규','안성호','김민주','원상진','김한울','이지영','정봉준']);
 console.log(arrr);
-
-//var brr= Array(10);
-//console.log(myMath.dafsdfasdf(brr,'아놔'));
-
-
-
+var array=[1,2,3,4,5,6];
+var brr= Array(10000);
+console.time('t');
+console.log(myMath.dafsdfasdf(brr,'아놔'));
+console.timeEnd('t');
+console.time('aaa');
+brr.forEach(v => (v++)); 
+console.timeEnd('aaa');
+console.time('aa');
+u.each( brr, v => ( v++  ));
+console.timeEnd('aa');
